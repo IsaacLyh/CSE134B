@@ -54,23 +54,20 @@ nav li:last-child a { border-bottom: none; }
 .imgContainer1{
 	display: block;
     float:left;
-    margin-left: 5%;
-    margin-right: 2%;
-    margin-top: 2%
 }
 .imgContainer2{
 	display: block;
     float:left;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 2%
 }
 .imgContainer3{
 	display: block;
     float:left;
-    margin-left: 2%;
-    margin-right: 5%;
-    margin-top: 2%
+}
+.wrapper {
+  display: grid;
+  margin:2%;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 10px;
 }
 
 #menuToggle { display: none; }
