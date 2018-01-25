@@ -53,7 +53,6 @@ nav li:last-child a { border-bottom: none; }
 
 .imgContainer1{
 	display: block;
-	position: relative;
     float:left;
     margin-left: 5%;
     margin-right: 2%;
@@ -61,7 +60,6 @@ nav li:last-child a { border-bottom: none; }
 }
 .imgContainer2{
 	display: block;
-	position: relative;
     float:left;
     margin-left: 2%;
     margin-right: 2%;
@@ -69,7 +67,6 @@ nav li:last-child a { border-bottom: none; }
 }
 .imgContainer3{
 	display: block;
-	position: relative;
     float:left;
     margin-left: 2%;
     margin-right: 5%;
