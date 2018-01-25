@@ -1,8 +1,10 @@
 body{
-	background-color: BlanchedAlmond;
+	background-color: #FFE8E3;
 	background-position: middle;
 	background-size: auto;
-    padding-bottom:50px;
+	font-family: sans-serif;
+	padding-top:50px;
+    padding-bottom:30px;
     margin-left: 0px;
 }
 
@@ -11,7 +13,9 @@ img{
 	display:block;
 	float:left;
 	border: 1px solid #ddd;
-	margin: 20px;
+	margin-left: 20px;
+	margin-right: 40px;
+	box-shadow: 5px 5px 3px #FF927E;
 }
 
 
@@ -20,7 +24,8 @@ p1{
 	padding-left: 10px;
 	padding-top:10px;
 	word-wrap: break-word;
-	color: Tomato;
+	font-family: "Comic Sans MS";
+	color: #FF7057;
 	font-size: 30px;
 }
 
@@ -37,7 +42,8 @@ p3{
 	display:block;
 	padding: 15px;
 	word-wrap: break-word;
-	color: black;
+	font-family: "Comic Sans MS";
+	color: #FF7057;
 	font-size: 25px;
 }
 
@@ -54,8 +60,23 @@ p4{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 50px;
-  	background-color: grey;
+	height: 30px;
+  	background-color: Tomato;
+  	color: white;
 	text-align: center;
+	font-size: 10px;
+	font-family: sans-serif;
+	border-bottom: 1px solid #EEE;
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 50px;
+  	background-color: Tomato;
+  	color: white;
+	text-align: center;
+	font-family: sans-serif;
 	border-bottom: 1px solid #EEE;
 }
