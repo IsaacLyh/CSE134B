@@ -93,9 +93,8 @@ p4{
 	display:block;
 }
 
-.menu {
-	padding: 0; 
-	margin-top: 50px;
+.menu { 
+	margin-top: 0px;
 	width: 240px;
 	height: 100%;
 	position: absolute;
