@@ -48,7 +48,7 @@ nav li:last-child a { border-bottom: none; }
 	width: 240px;
 	height: 100%;
 	position: absolute;
-	background: #FF927E;
+	background: #ff7d66;
 	left: -240px;
 	transition: all .3s ease-in-out;
 	-webkit-transition: all .3s ease-in-out;
