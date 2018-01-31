@@ -1,6 +1,6 @@
 * { padding: 0; margin: 0; }
 body { font-family: sans-serif; 
-	   background-color: white;}
+	   background-color: #ffe8e6;}
 a { text-decoration: none; color: tomato; }
 li { list-style-type: none; }
 
@@ -58,14 +58,32 @@ nav li:last-child a { border-bottom: none; }
 }
 .menu-icon {
 	padding: 10px 20px;
-	background: tomato;
-	color: white;
+	background: #ffffff;
+	color: #987D3E;
 	cursor: pointer;
 	float: right;
 	margin: 6px 6px 0 0;
 	border-radius: 5px;
 }
 
+/*.imgContainer1{
+	display: block;
+    float:left;
+}
+.imgContainer2{
+	display: block;
+    float:left;
+}
+.imgContainer3{
+	display: block;
+    float:left;
+}
+.wrapper {
+  display: grid;
+  margin:2%;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 10px;
+}*/
 
 .footer {
 	position: absolute;
