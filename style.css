@@ -38,7 +38,6 @@ nav li:last-child a { border-bottom: none; }
 }
 
 .item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   text-align: center;
 }
@@ -65,25 +64,6 @@ nav li:last-child a { border-bottom: none; }
 	margin: 6px 6px 0 0;
 	border-radius: 5px;
 }
-
-/*.imgContainer1{
-	display: block;
-    float:left;
-}
-.imgContainer2{
-	display: block;
-    float:left;
-}
-.imgContainer3{
-	display: block;
-    float:left;
-}
-.wrapper {
-  display: grid;
-  margin:2%;
-  grid-template-columns: repeat(3, 2fr);
-  grid-gap: 10px;
-}*/
 
 .footer {
 	position: absolute;
