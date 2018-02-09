@@ -46,6 +46,10 @@ nav li:last-child a { border-bottom: none; }
   display: inline-block;
 }
 
+#addItemUI{
+	visibility: hidden;
+}
+
 
 .menu {
 	width: 240px;

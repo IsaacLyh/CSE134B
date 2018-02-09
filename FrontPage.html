@@ -21,7 +21,7 @@
         <ul>
           <li><a href="FrontPage.html">HOME</a></li>
           <li><a href="#">DETAIL</a></li>
-          <li><a href="#">Sort By Category</a></li>
+          <li><a href="#" onclick="showAddItem()">Add your Secret Sauce</a></li>
           <li><a href="#">Credit</a></li>
         </ul>
       </nav>
@@ -41,17 +41,14 @@
           <div class='item'></div>
           <div class='item'></div>
       </div>
-
-      <div style="margin: 30px">
+      <div style="margin: 30px" id="addItemUI">
           <input type="text" name="Pic" placeholder="URL of Pic"><br>
           <input type="text" name="text" placeholder="Menu Name"><br>
           <input type="submit" onClick="addItem()" value="Add~">
       </div>
-
       <footer class="footer">
         <p> &copy; CookBook</p>
       </footer>
-    
     </body>
     <script>
       function populate(){
@@ -62,11 +59,14 @@
           list[i].innerHTML = "<img src="+mydata[i].pic+" height='200' width='400' alt= 'Unable to load Image'/><br /><a href='detail_page.html'>"+mydata[i].text+"</a>"+"<br /><button onclick='delete()'>Delete</button>";
         }
       }
+      function showAddItem(){
+        var addItemUI = document.getElementById("addItemUI");
+        addItemUI.style.visibility = "visible";
+      }
 
       function addItem() {
         console.log(data);
+        //Remeber to hide AdditemUI after clicking add
       }
     </script>
-
-
   </html>
