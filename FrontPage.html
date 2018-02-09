@@ -13,11 +13,10 @@
       <label for="menuToggle" class="menu-icon">&#9776;</label>
       <header>
         <div id="brand">CookBook.co</div>
-      </header>
-      <form class="form-inline" style="margin: 10px 0px 0px 30px;">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchBox">
-        <button type='button' class="btn btn-outline-success my-2 my-sm-0" onclick="search()">Search</button>
+      <form class="form-inline" id="search">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchBox" onchange="search()">
       </form>
+      </header>
       <nav class="menu">
         <ul>
           <li><a href="FrontPage.html">HOME</a></li>

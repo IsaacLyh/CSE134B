@@ -62,12 +62,19 @@ nav li:last-child a { border-bottom: none; }
 
 .menu-icon {
 	padding: 10px 20px;
-	background: #ffffff;
-	color: #987D3E;
+	background: tomato;
+	color: #ffffff;
 	cursor: pointer;
 	float: right;
-	margin: 6px 6px 0 0;
+	margin: 3px 0px 0 0;
 	border-radius: 5px;
+}
+
+#search{
+	float: right;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 .footer {
