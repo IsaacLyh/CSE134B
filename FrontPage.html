@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <script type="text/javascript" src="data.json"></script>
       <script type="text/javascript" src="lyh.js"></script>
+      <!--<script type="text/javascript" src="tt.js"></script>-->
     </head>
     <body onload="populate()">
       <input type="checkbox" id="menuToggle">
@@ -42,8 +43,8 @@
           <div class='item'></div>
       </div>
       <div style="margin: 30px" id="addItemUI">
-          <input type="text" name="Pic" placeholder="URL of Pic"><br>
-          <input type="text" name="text" placeholder="Menu Name"><br>
+          <input type="text" name="Pic" placeholder="URL of Pic" id = "pic"><br>
+          <input type="text" name="text" placeholder="Menu Name" id = "text"><br>
           <input type="submit" onClick="addItem()" value="Add~">
       </div>
       <footer class="footer">
@@ -64,9 +65,5 @@
         addItemUI.style.visibility = "visible";
       }
 
-      function addItem() {
-        console.log(data);
-        //Remeber to hide AdditemUI after clicking add
-      }
     </script>
   </html>
