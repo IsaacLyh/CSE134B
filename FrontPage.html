@@ -25,6 +25,12 @@
           <li><a href="#" onclick="showAddItem()">Add your Secret Sauce</a></li>
           <li><a href="#">Credit</a></li>
         </ul>
+        
+      <div style="margin: 30px" id="addItemUI">
+          <input type="text" name="Pic" placeholder="URL of Pic" id = "pic"><br>
+          <input type="text" name="text" placeholder="Menu Name" id = "text"><br>
+          <input type="submit" onClick="addItem()" value="Add~">
+      </div>
       </nav>
       <div id="container">
           <div class="item"></div>
@@ -41,11 +47,6 @@
           <div class='item'></div>
           <div class='item'></div>
           <div class='item'></div>
-      </div>
-      <div style="margin: 30px" id="addItemUI">
-          <input type="text" name="Pic" placeholder="URL of Pic" id = "pic"><br>
-          <input type="text" name="text" placeholder="Menu Name" id = "text"><br>
-          <input type="submit" onClick="addItem()" value="Add~">
       </div>
       <footer class="footer">
         <p> &copy; CookBook</p>

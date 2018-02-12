@@ -50,6 +50,10 @@ nav li:last-child a { border-bottom: none; }
 	visibility: hidden;
 }
 
+#pic{
+	margin-bottom: 2px;
+}
+
 
 .menu {
 	width: 240px;
@@ -91,6 +95,9 @@ nav li:last-child a { border-bottom: none; }
 	font-size: 10px;
 	font-family: sans-serif;
 	border-bottom: 1px solid #EEE;
+	position:absolute;
+    bottom: 0px;
+    width: 100%;
 }
 
 @media screen and (max-width: 800px) {
