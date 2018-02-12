@@ -1,0 +1,27 @@
+{
+  "name": "cse134b",
+  "version": "1.0.0",
+  "description": "cse134b",
+  "main": "FrontPage.html",
+  "scripts": {
+    "start":"npm run lite",
+    "lite":"lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaacLyh/CSE134B.git"
+  },
+  "keywords": [
+    "cse134bhw"
+  ],
+  "author": "Yuhang Lian,Qinyun Cai,Bocun Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsaacLyh/CSE134B/issues"
+  },
+  "homepage": "https://github.com/IsaacLyh/CSE134B#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
