@@ -16,16 +16,15 @@ function addItem(){
 		var list = document.getElementsByClassName("item");
 		var newList = [];
 
-		for(var i=0; i<list.length; i++){
-			obj.table.push(list[i]);
-		}
-		newList.push(addItemUI);
+		var mydata = JSON.parse(data);
+		var len = mydata.length;
+
+		list[len+1].innerHTML = "<img src="+picInput+" height='200' width='400' alt= 'Unable to load Image'/><br /><a href='detail_page.html'>"+textInput+"</a>"+"<br /><button onclick='delete()'>Delete</button>";
 		
 		console.log("Loaded Page");
-		var json = JSON.stringify(obj);
-		var fs = require('fs');
+		//var json = JSON.stringify(obj);
 		//var fs = require('fs');
-		fs.writeFile('data.json',"pic :" + picInput + "text :" + textInput);
+		//fs.writeFile('data.json',"pic :" + picInput + "text :" + textInput);
 		
 		
 		//populate();
