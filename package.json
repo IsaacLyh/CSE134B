@@ -25,6 +25,9 @@
     "lite-server": "^2.3.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6"
+    "bootstrap": "^4.0.0-alpha.6",
+    "express": "^4.16.2",
+    "pg": "^7.4.1",
+    "pg-format": "^1.0.4"
   }
 }
