@@ -19,7 +19,9 @@ function addItem(){
 		var mydata = JSON.parse(data);
 		var len = mydata.length;
 
-		list[len+1].innerHTML = "<img src="+picInput+" height='200' width='400' alt= 'Unable to load Image'/><br /><a href='detail_page.html'>"+textInput+"</a>"+"<br /><button onclick='delete()'>Delete</button>";
+		var index = len + 1;
+
+		list[index].innerHTML = "<img src="+picInput+" height='200' width='400' alt= 'Unable to load Image'/><br /><a href='detail_page.html'>"+textInput+"</a>"+"<br /><button onclick='deleteItem("+index+")'>Delete</button>";
 		
 		console.log("Loaded Page");
 		//var json = JSON.stringify(obj);
