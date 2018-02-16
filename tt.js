@@ -4,9 +4,9 @@ function addItem(){
 	var textInput = document.getElementById("text").value;
 	var addItemUI = document.getElementById("addItemUI");
 
-	var obj = {
-   		table: []
-	};
+	//var obj = {
+   		//table: []
+	//};
 
 	if(picInput.length == 0 || textInput.length == 0){
 		alert("please insert a valid input");
