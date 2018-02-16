@@ -12,15 +12,15 @@
       <!--Link goes here  -->
       <title>CookBook</title>
       <!-- Script goes here -->
-      <script type="text/javascript" src="data.json"></script>
       <script src="node_modules/jquery/dist/jquery.min.js"></script>
       <script src="node_modules/tether/dist/js/tether.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="lyh.js"></script>
       <script type="text/javascript" src="tt.js"></script>
       <script type="text/javascript" src="BL.js"></script>
-      <!-- Script goes here -->
-      <title>CookBook</title>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <script type="text/javascript" src="data.json"></script>      
     </head>
     <body onload="populate()">
       <input type="checkbox" id="menuToggle">
@@ -46,32 +46,39 @@
       </div>
       </nav>
       <div id="container">
-          <div id="1" class="item"></div>
-          <div id="2" class="item"></div>
-          <div id="3" class="item"></div>
-          <div id="4" class='item'></div>
-          <div id="5" class='item'></div>
-          <div id="6" class='item'></div>
-          <div id="7" class='item'></div>
-          <div id="8" class="item"></div>
-          <div id="9" class="item"></div>
-          <div id="10" class="item"></div>
-          <div id="11" class='item'></div>
-          <div id="12" class='item'></div>
-          <div id="13" class='item'></div>
-          <div id="14" class='item'></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class='item'></div>
+          <div class='item'></div>
+          <div class='item'></div>
+          <div class='item'></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class='item'></div>
+          <div class='item'></div>
+          <div class='item'></div>
+          <div class='item'></div>
       </div>
       <footer class="footer">
         <p> &copy; CookBook</p>
       </footer>
     </body>
     <script>
+      let dataList; 
+      $(document).ready(function() {
+        console.log('ready')
+        $.getJSON('./data.json', function(data) {
+          dataList = data;
+        })
+      })
       function populate(){
         console.log("Loaded Page");
-        var mydata = JSON.parse(data);
+
         var list = document.getElementsByClassName("item");
-        for(var i = 0; i < mydata.length;i++){
-          list[i].innerHTML = "<img src="+mydata[i].pic+" height='200' width='400' alt= 'Unable to load Image'/><br /><a href='detail_page.html'>"+mydata[i].text+"</a>"+"<br /><button onclick='deleteItem("+ i+1 +")'>Delete</button>";
+        for(var i = 0; i < dataList.length;i++){
+          list[i].innerHTML = "<img src="+dataList[i].pic+" height='200' width='400' alt= 'Unable to load Image'/><br /><a href='detail_page.html'>"+dataList[i].text+"</a>"+"<br /><button onclick='deleteItem("+ dataList[i].id +")'>Delete</button>";
         }
       }
       function showAddItem(){

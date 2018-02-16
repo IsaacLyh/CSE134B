@@ -1,1 +1,22 @@
-data = '[{"pic" : "recipe/stuffed_mushroom_pic.jpg", "text" : "Stuffed Mushroom"},{"pic" : "recipe/stuffed_mushroom_pic.jpg", "text" : "Stuffed Mushroom"},{"pic" : "recipe/stuffed_mushroom_pic.jpg", "text" : "Stuffed Mushroom"},{"pic" : "recipe/stuffed_mushroom_pic.jpg", "text" : "Stuffed Mushroom"}]';
+[
+	{
+		"id": 0,
+		"pic" : "recipe/stuffed_mushroom_pic.jpg",
+		"text" : "Stuffed Mushroom"
+	},
+	{
+		"id": 1,
+		"pic" : "recipe/stuffed_mushroom_pic.jpg", 
+		"text" : "Stuffed Mushroom"
+	},
+	{
+		"id": 2,
+		"pic" : "recipe/stuffed_mushroom_pic.jpg", 
+		"text" : "Stuffed Mushroom"
+	},
+	{
+		"id": 3,
+		"pic" : "recipe/stuffed_mushroom_pic.jpg", 
+		"text" : "Stuffed Mushroom"
+	}
+]

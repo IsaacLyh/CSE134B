@@ -1,5 +1,5 @@
 function addItem(){
-	console.log(data);
+	console.log(dataList);
 	var picInput = document.getElementById("pic").value;
 	var textInput = document.getElementById("text").value;
 	var addItemUI = document.getElementById("addItemUI");
@@ -14,13 +14,18 @@ function addItem(){
 	}
 	else{
 		var list = document.getElementsByClassName("item");
-		var newList = [];
 
-		var mydata = JSON.parse(data);
+		var mydata = dataList;
 		var len = mydata.length;
 
-		list[len+1].innerHTML = "<img src="+picInput+" height='200' width='400' alt= 'Unable to load Image'/><br /><a href='detail_page.html'>"+textInput+"</a>"+"<br /><button onclick='delete()'>Delete</button>";
+		list[len].innerHTML = "<img src="+picInput+" height='200' width='400' alt= 'Unable to load Image'/><br /><a href='detail_page.html'>"+textInput+"</a>"+"<br /><button onclick='deleteItem("+(len)+")'>Delete</button>";
 		
+		dataList.push({
+			"id": len,
+			"pic" : picInput, 
+			"text" : textInput
+		})
+
 		console.log("Loaded Page");
 		//var json = JSON.stringify(obj);
 		//var fs = require('fs');
