@@ -148,6 +148,12 @@ header {
 	margin-left: 1%;
 }
 
+.row{
+	padding-left:1.5%;
+	margin-left:2%;
+	margin-bottom: 1%;
+}
+
 .header {
 	margin:auto;
 	width: 100%;

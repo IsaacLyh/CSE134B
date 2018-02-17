@@ -18,7 +18,7 @@ function addItem(){
 		var mydata = dataList;
 		var len = mydata.length;
 
-		list[len].innerHTML = "<img src="+picInput+" height='200' width='400' alt= 'Unable to load Image'/><br /><a href='detail_page.html'>"+textInput+"</a>"+"<br /><button onclick='deleteItem("+(len)+")'>Delete</button>";
+		list[len].innerHTML = "<img src="+picInput+" height='200' width='400' alt= 'Unable to load Image'/><br /><a href='detail_page.html'>"+textInput+"</a>"+"<br /><button onclick='deleteItem("+(len)+")'>Delete</button><hr>";
 		
 		dataList.push({
 			"id": len,
