@@ -51,7 +51,15 @@ function addcomment(){
 				current = i;
 			}
 		}
-		list[current].innerHTML = comment+"<button onclick='deleteComment()'>Delete</button>";
+		list[current].innerHTML = comment+"<button onclick='deletecomment("+current+")'>Delete</button>";
 
 	}
+}
+
+function deletecomment(num){
+	console.log(num);
+	list = document.getElementsByClassName("row");
+
+	list[num].innerHTML = "";
+	
 }
