@@ -36,3 +36,22 @@ function addItem(){
 		addItemUI.style.visibility = "hidden";
 	}
 }
+
+function addcomment(){
+	console.log("add comment");
+	var comment = document.getElementById("chat").value;
+	if(comment.length == 0){
+		alert("please enter a valid input");	
+	}
+	else{
+		list = document.getElementsByClassName("row");
+		var current = 0;
+		for(var i = 0; i < list.length; i++){
+			if(list[i].innerHTML.length == 0){
+				current = i;
+			}
+		}
+		list[current].innerHTML = comment;
+
+	}
+}
