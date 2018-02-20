@@ -2,7 +2,7 @@
   "name": "cse134b",
   "version": "1.0.0",
   "description": "cse134b",
-  "main": "FrontPage.html",
+  "main": "index.html",
   "scripts": {
     "start": "npm run lite",
     "lite": "lite-server",
