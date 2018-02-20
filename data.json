@@ -2,7 +2,7 @@
 	{
 		"id": 0,
 		"pic" : "recipe/stuffed_mushroom_pic.jpg",
-		"text" : "Stuffed Mushroom"
+		"text" : "Mushroom"
 	},
 	{
 		"id": 1,
@@ -12,11 +12,11 @@
 	{
 		"id": 2,
 		"pic" : "recipe/stuffed_mushroom_pic.jpg", 
-		"text" : "Stuffed Mushroom"
+		"text" : "Good Mushroom"
 	},
 	{
 		"id": 3,
 		"pic" : "recipe/stuffed_mushroom_pic.jpg", 
-		"text" : "Stuffed Mushroom"
+		"text" : "Nice Mushroom"
 	}
 ]
