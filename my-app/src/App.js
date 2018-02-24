@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import images from './stuffed_mushroom_pic.jpg';
-import recipe from '/recipe'
+//import recipe from '/recipe'
 
 class App extends Component {
       constructor(props){
@@ -9,8 +9,8 @@ class App extends Component {
         this.state = {
           dataList:[{
             id: 1,
-            pic: "stuffed_mushroom_pic.jpg",
-            text: "Nice Mushroom"
+            pic: "https://b-ssl.duitang.com/uploads/item/201603/07/20160307122506_UMJfa.jpeg",
+            text: "Nice pants, I mean Mushroom..."
           }]
         }
       }
@@ -26,14 +26,14 @@ class App extends Component {
     
 
   render() {
-    console.log(recipe);
+    //console.log(recipe);
     return (
       <div>
         <header>
         <div id="brand">CookBook.co</div>
       </header>
       <div id="container">
-          <div className="item"><img src={images} height='200' width='400' alt="unable to load"></img><br /><a href='detail_page.html'>{this.state.dataList[0].text}</a></div>
+          <div className="item"><img src={this.state.dataList[0].pic} height='200' width='200' alt="unable to load"></img><br /><a href='detail_page.html'>{this.state.dataList[0].text}</a></div>
           <div className="item"></div>
           <div className='item'></div>
           <div className='item'></div>
