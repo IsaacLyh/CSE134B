@@ -28,13 +28,6 @@ const CourseForm = ({course, allAuthors, onSave, onChange, saving, errors}) => {
         onChange={onChange}
         error={errors.category}/>
 
-      <TextInput
-        name="length"
-        label="Length"
-        value={course.length}
-        onChange={onChange}
-        error={errors.length}/>
-
       <input
         type="submit"
         disabled={saving}
