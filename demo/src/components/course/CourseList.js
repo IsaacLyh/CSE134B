@@ -10,7 +10,6 @@ const CourseList = ({courses}) => {
         <th>Title</th>
         <th>Author</th>
         <th>Category</th>
-        <th>Length</th>
       </tr>
       </thead>
       <tbody>
