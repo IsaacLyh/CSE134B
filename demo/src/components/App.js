@@ -2,6 +2,8 @@
 import React, {PropTypes} from 'react';
 import Header from './common/Header';
 import {connect} from 'react-redux';
+import Footer from './common/Footer';
+
 
 class App extends React.Component {
   render() {
@@ -11,6 +13,7 @@ class App extends React.Component {
           loading={this.props.loading}
         />
         {this.props.children}
+        <Footer />
       </div>
     );
   }
