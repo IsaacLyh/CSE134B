@@ -5,25 +5,25 @@ import SelectInput from '../common/SelectInput';
 const CourseForm = ({course, allAuthors, onSave, onChange, saving, errors}) => {
   return (
     <form>
-      <h1>Manage Course</h1>
+      <h1>Manage Recipe</h1>
       <TextInput
-        name="title"
-        label="Title"
+        name="Name"
+        label="Name"
         value={course.title}
         onChange={onChange}
         error={errors.title}/>
 
       <SelectInput
-        name="authorId"
-        label="Author"
+        name="Maker"
+        label="Maker"
         value={course.authorId}
-        defaultOption="Select Author"
+        defaultOption="Select Maker"
         options={allAuthors}
         onChange={onChange} error={errors.authorId}/>
 
       <TextInput
-        name="category"
-        label="Category"
+        name="Style"
+        label="Style"
         value={course.category}
         onChange={onChange}
         error={errors.category}/>
