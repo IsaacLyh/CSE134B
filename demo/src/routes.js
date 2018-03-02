@@ -14,8 +14,8 @@ export default (
     <Route path="courses" component={CoursesPage} />
     <Route path="course" component={ManageCoursePage} />
     <Route path="course/:id" component={ManageCoursePage} />
-    <Route path='comment' component={ManageCommentPage}/>
-    <Route path='comment/:id' component={ManageCommentPage}/>
+    <Route path="comment" component={ManageCommentPage}/>
+    <Route path="comment/:id" component={ManageCommentPage}/>
     <Route path="about" component={AboutPage} />
   </Route>
 );

@@ -48,7 +48,7 @@ export function deleteComment(comment){
     return commentApi.deleteComment(comment).catch(error => {
       dispatch(ajaxCallError(error));
       throw(error);
-    })
-  }
+    });
+  };
 }
 
