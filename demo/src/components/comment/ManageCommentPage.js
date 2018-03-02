@@ -13,11 +13,13 @@ export class ManageCommentPage extends React.Component {
     this.state = {
       comments: Object.assign({}, props.comments),
       errors: {},
-      saving: false
+      saving: false,
+      deleting:false
     };
 
     this.updateCommentState = this.updateCommentState.bind(this);
     this.saveComment = this.saveComment.bind(this);
+    this.deleteComment = this.deleteComment.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -49,20 +51,36 @@ export class ManageCommentPage extends React.Component {
 
 
   saveComment(event) {
-    
     event.preventDefault();
-
     if (!this.commentFormIsValid()) {
       return;
     }
     this.setState({saving: true});
-    //alert("good");
     this.props.actions.saveComment(this.state.comments)
       .then(() => this.redirect())
       .catch(error => {
         toastr.error(error);
         this.setState({saving: false});
       });
+  }
+
+  deleteComment(event) {
+    event.preventDefault();
+    this.setState({deleting: true});
+    alert(this.state.comments);
+    this.props.actions.deleteComment(this.state.comments)
+    .then(()=> this.redirect_delete())
+    .catch(error => {
+      toastr.error(error);
+      this.setState({deleting:false});
+    });
+    alert(this.state.comments);
+  }
+
+  redirect_delete(){
+    this.setState({deleting: false});
+    toastr.success('Comment deleted');
+    this.context.router.push('/courses');
   }
 
   redirect() {
@@ -77,7 +95,9 @@ export class ManageCommentPage extends React.Component {
         comment={this.state.comments}
         onChange={this.updateCommentState}
         onSave={this.saveComment}
+        //onDelete = {this.deleteComment}
         errors={this.state.errors}
+        deleting={this.state.deleting}
         saving={this.state.saving}
       />
     );

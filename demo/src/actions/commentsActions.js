@@ -14,6 +14,10 @@ export function updateCommentSuccess(comment) {
   return {type: types.UPDATE_COMMENTS_SUCCESS, comment};
 }
 
+export function deleteCommentSuccess(comment) {
+  return {type: types.DELETE_COMMENTS_SUCCESS, comment};
+}
+
 export function loadComments() {
   return function(dispatch) {
     dispatch(beginAjaxCall());
@@ -37,3 +41,14 @@ export function saveComment(comment) {
     });
   };
 }
+
+export function deleteComment(comment){
+  return function(dispatch,getState) {
+    dispatch(beginAjaxCall());
+    return commentApi.deleteComment(comment).catch(error => {
+      dispatch(ajaxCallError(error));
+      throw(error);
+    })
+  }
+}
+
