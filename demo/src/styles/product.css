@@ -135,12 +135,11 @@
   }
 }
 
-h1{
-  top: 10%;
-  text-indent: 10px;
-}
-p{
-  text-indent: 10px;
+.about{
+  text-align: center;
+  background-image: url("https://static1.squarespace.com/static/5955107286e6c0334146a98d/t/5a0120699140b7673391a555/1510023284089/Background1.png?format=2500w");
+  color: white;
+  height: 250px;
 }
 
 .overflow-hidden { overflow: hidden; }

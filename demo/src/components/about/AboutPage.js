@@ -3,7 +3,7 @@ import React from 'react';
 class AboutPage extends React.Component {
   render() {
     return (
-      <div>
+      <div className = "about">
         <h1>About Us</h1>
         <br/>
         <p>This application uses React, Redux, React Router and a variety of other helpful libraries.</p>
