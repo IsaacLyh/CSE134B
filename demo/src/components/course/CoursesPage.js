@@ -28,7 +28,7 @@ class CoursesPage extends React.Component {
   render() {
     const {courses} = this.props;
     const {comments} = this.props;
-
+    //alert(comments);
     return (
       <div>
         <h1>Add Recipe</h1>

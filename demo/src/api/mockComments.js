@@ -5,8 +5,8 @@ import delay from './delay';
 // All calls return promises.
 const comments = [
   {
-    id: "1",
-    title: "Fuck boy",
+    id: "Looks-good",
+    title: "Looks good",
   }
 ];
 
@@ -57,12 +57,17 @@ class CommentApi {
   }
 
   static deleteComment(commentId) {
+    //alert("deleting comment");
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         const indexOfCourseToDelete = comments.findIndex(comment => {
           return comment.commentId == commentId;
         });
+        alert(comments);
+        //console.log(comments);
         comments.splice(indexOfCourseToDelete, 1);
+        //console.log(comments);
+        alert(comments);
         resolve();
       }, delay);
     });
