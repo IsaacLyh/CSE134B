@@ -6,7 +6,7 @@ import delay from './delay';
 const comments = [
   {
     id: "Looks-good",
-    title: "Looks good",
+    title: "Looks good"
   }
 ];
 
