@@ -10,7 +10,7 @@ const courses = [
     watchHref: "https://www.foodnetwork.com/recipes/giada-de-laurentiis/stuffed-mushrooms-recipe-1941818",
     authorId: "cyka-blyat",
     length: "",
-    category: "Vegetable"
+    Style: "Vegetable"
   },
   {
     id: "Corned-Beef-and-Cabbage",
@@ -18,7 +18,7 @@ const courses = [
     watchHref: "https://www.foodnetwork.com/recipes/tyler-florence/corned-beef-and-cabbage-recipe-1953631",
     authorId: "cyka-blyat",
     length: "",
-    category: "St.Patrick"
+    Style: "St.Patrick"
   },
   {
     id: "Egg-Stuffed-Ravioli",
@@ -26,7 +26,7 @@ const courses = [
     watchHref: "https://www.foodnetwork.com/recipes/food-network-kitchen/egg-stuffed-ravioli-4538678",
     authorId: "cyka-blyat",
     length: "",
-    category: "Food Network Kitchen"
+    Style: "Food Network Kitchen"
   }
 ];
 

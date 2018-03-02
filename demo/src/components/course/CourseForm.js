@@ -7,14 +7,14 @@ const CourseForm = ({course, allAuthors, onSave, onChange, saving, errors}) => {
     <form>
       <h1>Manage Recipe</h1>
       <TextInput
-        name="Name"
+        name="title"
         label="Name"
         value={course.title}
         onChange={onChange}
         error={errors.title}/>
 
       <SelectInput
-        name="Maker"
+        name="authorId"
         label="Maker"
         value={course.authorId}
         defaultOption="Select Maker"
@@ -24,7 +24,7 @@ const CourseForm = ({course, allAuthors, onSave, onChange, saving, errors}) => {
       <TextInput
         name="Style"
         label="Style"
-        value={course.category}
+        value={course.Style}
         onChange={onChange}
         error={errors.category}/>
 

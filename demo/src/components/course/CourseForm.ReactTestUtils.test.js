@@ -12,7 +12,7 @@ function setup(saving) {
 
   let renderer = TestUtils.createRenderer();
   renderer.render(<CourseForm {...props}/>);
-  let output = renderer.getRenderOutput();
+  let output = renderer.getRenderOutput(props);
 
   return {
     props,

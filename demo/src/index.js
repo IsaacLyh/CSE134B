@@ -12,7 +12,7 @@ import './styles/styles.css'; //Webpack can import CSS files too!
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/toastr/build/toastr.min.css';
 import './styles/product.css';
-import './styles/coursePage.css'
+import './styles/coursePage.css';
 import './styles/bootstrap.min.css';
 
 
