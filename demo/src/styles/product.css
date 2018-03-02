@@ -1,6 +1,22 @@
+
+
+.item > a:hover   {
+  /* Applies to links under the pointer */
+  text-decoration:  none;
+  font-weight:      bold;
+} 
+
+.item > a {
+  /* Applies to links under the pointer */
+  color: black;
+} 
+
+
+
 .container {
   max-width: 960px;
 }
+
 .subTitleWords {
   font-size: 16px;
 }
@@ -9,6 +25,40 @@
   background-image: url("https://static1.squarespace.com/static/5955107286e6c0334146a98d/t/5a0120699140b7673391a555/1510023284089/Background1.png?format=2500w");
   color: white;
 }
+
+#container {
+  padding: 10px;
+}
+
+.item {
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.categoryName {
+  text-align: center;
+}
+
+.footer {
+  height: 26px;
+  text-align: center;
+  background: #eaeaea;
+  box-shadow: @shadow-2;
+  width: 100%;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+@media print {
+  .footer{
+    box-shadow: 0;
+  }
+}
+
 /*
  * Custom translucent site header
  */
