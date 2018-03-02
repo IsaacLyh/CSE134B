@@ -2,7 +2,9 @@ import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as courseActions from '../../actions/courseActions';
+import * as commentActions from '../../actions/commentsActions';
 import CourseList from './CourseList';
+import CommentList from '../comment/CommentList';
 import {browserHistory} from 'react-router';
 
 class CoursesPage extends React.Component {
@@ -19,8 +21,13 @@ class CoursesPage extends React.Component {
     browserHistory.push('/course');
   }
 
+  redirectToAddCommentPage(){
+    browserHistory.push('/comment');
+  }
+
   render() {
     const {courses} = this.props;
+    const {comments} = this.props;
 
     return (
       <div>
@@ -30,6 +37,12 @@ class CoursesPage extends React.Component {
                className="btn btn-primary"
                onClick={this.redirectToAddCoursePage}/>
         <CourseList courses={courses}/>
+        <h1>Add Comment</h1>
+        <input type="submit"
+               value="Add Comment"
+               className="btn btn-primary"
+               onClick={this.redirectToAddCommentPage}/>
+        <CommentList comments={comments}/>
       </div>
     );
   }
@@ -37,12 +50,14 @@ class CoursesPage extends React.Component {
 
 CoursesPage.propTypes = {
   courses: PropTypes.array.isRequired,
+  comments: PropTypes.array.isRequired,
   actions: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
   return {
-    courses: state.courses
+    courses: state.courses,
+    comments: state.comments
   };
 }
 
