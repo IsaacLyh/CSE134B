@@ -135,4 +135,12 @@
   }
 }
 
+h1{
+  top: 10%;
+  text-indent: 10px;
+}
+p{
+  text-indent: 10px;
+}
+
 .overflow-hidden { overflow: hidden; }
