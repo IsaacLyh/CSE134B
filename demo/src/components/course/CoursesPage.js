@@ -11,6 +11,8 @@ class CoursesPage extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.redirectToAddCoursePage = this.redirectToAddCoursePage.bind(this);
+    //this.redirectToAddCommentPage = this.redirectToAddCommentPage.bind(this);
+    //this.redirectToManageAuthorPage = this.redirectToManageAuthorPage.bind(this);
   }
 
   courseRow(course, index) {
@@ -25,6 +27,10 @@ class CoursesPage extends React.Component {
     browserHistory.push('/comment');
   }
 
+  redirectToManageAuthorPage(){
+    browserHistory.push('/author');
+  }
+
   render() {
     const {courses} = this.props;
     const {comments} = this.props;
@@ -36,6 +42,10 @@ class CoursesPage extends React.Component {
                value="Add Recipe"
                className="btn btn-primary"
                onClick={this.redirectToAddCoursePage}/>
+        <input type="submit"
+               value="Manage Author"
+               className="btn btn-primary"
+               onClick={this.redirectToManageAuthorPage}/>
         <CourseList courses={courses}/>
         <h1>Add Comment</h1>
         <input type="submit"
