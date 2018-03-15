@@ -13,19 +13,19 @@ class authorForm extends React.Component{
 		const {authors} = this .props;
 		return(
 			<div>
-				<h1>tt is not cute</h1>
+				<h1>tt is lyh's daddy</h1>
 			</div>
-		)
+		);
 	}
 }
 
 
 authorForm.propTypes = {
-  actions: PropTypes.object.isRequired,
-  authors: PropTypes.array.isRequired
+  actions: React.PropTypes.object.isRequired,
+  authors: React.PropTypes.array.isRequired
 };
 
-function mapStateToProps(state, ownProps) {
+/*function mapStateToProps(state, ownProps) {
   return {
     authors: state.authors
   };
@@ -35,7 +35,7 @@ function mapDispatchToProps(dispatch) {
   return {
     actions: bindActionCreators(authorActions, dispatch)
   };
-}
+}*/
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(authorForm);
+export default authorForm;
